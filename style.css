@@ -5,24 +5,29 @@ h1
 {
 	border-bottom: 2px;
 	border-color: 1px;
+	border-bottom: solid red;
+	padding: 1em;
+	margin: 0 -1em;
+
 }
+
 h1, h2
 {
+	text-align: center;
 	justify-content: center;
 	width: 900px;
 	margin: auto;
+font-family: 'Raleway', sans-serif;
 }
-
+*
+{
+font-family: 'Roboto Slab', serif;
+}
 body
 {
 	justify-content: center;
 	width: 900px;
 	margin: auto;
-
-}
-li
-{
-	border: 1px;
 }
 ul, li
 {
@@ -30,27 +35,108 @@ ul, li
 }
 footer
 {
-	background : rgb(105, 116, 124);
+	background : rgb(105, 116, 124, 0.5);
+		text-align: center;
 }
-nav
+footer a
+{
+	justify-content: center;
+	text-align: center;
+}
+nav, .bienvenue
 {
 	display: flex;
 	margin-right: 15px;
+	position: absolute;
 }
-nav:a
+nav a
 {
-	text-decoration-style: none;
+	text-decoration: none;
+	color:inherit;
+	left: 750px;
+	position: relative;
+	padding: 10px;
+
 }
-nav:hover
+nav a:hover, .bienvenue
 {
-	border-bottom: 3px;
+	border-bottom: solid 3px;
 	border-color: red;
 }
-body
+.acteurs
 {
-	background-color: rgb(234, 244, 211);
+border: solid rgb(105, 116, 124);
+border-width: 5px;
+border-spacing: 5px;
+vertical-align: middle;
+padding: 5px;
 }
-menu
+.acteurs img
 {
-	border: 1px;
+	display:flex;
+	left : 1px;
+	position: relative;
+	float: left;
+}
+.module
+{
+border: solid black;
+border-width: 3px;
+border-spacing: 5px;
+padding: 15px;
+margin: 10px;
+min-height: 150px;
+min-width: 250px;
+text-align: center;
+vertical-align: middle;
+}
+.module a
+{
+	text-decoration: none;
+	color: rgb(253, 232, 196);
+	position: relative;
+	text-align: center;
+}
+.module:nth-child(1)
+{
+	background: #00805280;
+
+}
+.module:nth-child(2)
+{
+	background: #7B558A80;
+}
+.module:nth-child(3)
+{
+	background: #00969880;
+}
+.module:nth-child(4)
+{
+	background: #ED1C2480;
+}
+.module:nth-child(5)
+{
+	background: #00000080;
+}
+.module:nth-child(6)
+{
+	background: #28467580;
+}
+.INFO_BNP,.INFO_BPCE, .INFO_CREDA, .INFO_CREDIMUT, .INFO_SOGENAL, .INFO_BANQPO
+{
+	color:black;
+	border: 0px solid red;
+	border-radius: 25px;
+	background-color: rgb(253, 232, 196);
+	display: flex;
+	right: 15px;
+	position: relative;
+	float: right;
+	margin: auto;
+	padding: auto;
+	vertical-align: center;
+}
+.INFO_BNP,.INFO_BPCE, .INFO_CREDA, .INFO_CREDIMUT, .INFO_SOGENAL, .INFO_BANQPO, .module a
+{
+	align-content: right;
 }
