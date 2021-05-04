@@ -1,0 +1,56 @@
+/* Colors : Détails/menu (rouge) =  rgb(255,0,0) | Texte (noir) = rgb(0,0,0) | 
+Background (vert-beige) = rgb(234, 244, 211) | background footer ? (gris argenté) = 
+rgb(105, 116, 124) | texte important ? (beige marrant) = rgb(253, 232, 196) */
+h1
+{
+	border-bottom: 2px;
+	border-color: 1px;
+}
+h1, h2
+{
+	justify-content: center;
+	width: 900px;
+	margin: auto;
+}
+
+body
+{
+	justify-content: center;
+	width: 900px;
+	margin: auto;
+
+}
+li
+{
+	border: 1px;
+}
+ul, li
+{
+	list-style: none;
+}
+footer
+{
+	background : rgb(105, 116, 124);
+}
+nav
+{
+	display: flex;
+	margin-right: 15px;
+}
+nav:a
+{
+	text-decoration-style: none;
+}
+nav:hover
+{
+	border-bottom: 3px;
+	border-color: red;
+}
+body
+{
+	background-color: rgb(234, 244, 211);
+}
+menu
+{
+	border: 1px;
+}
