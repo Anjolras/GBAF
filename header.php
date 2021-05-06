@@ -14,10 +14,10 @@ session_start();
 		<title>GBAF: Groupement Banque-Assurance Français</title>
 	</head>
 	<header>
-		<img class="logo"
+		<a href=index.php><img class="logo"
 		src="logo.png"
 		alt="Logo GBAF"
-		width="130" height="150">
+		 width="130" height="150"></a>
 <?php
 	if(!isset($_SESSION['prenom']) AND !isset($_SESSION['nom']))
 	{
