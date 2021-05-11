@@ -37,7 +37,7 @@ if(isset($_POST['commentaire']))
 	}
 }
 	
-	if ($avis == 1)
+	if ($avis = 0)
 	{
 		$c['avis']='<img class="thbas"
 		src="thbas.png"
@@ -57,8 +57,8 @@ if(isset($_POST['commentaire']))
 <?php while($c = $commentaires->fetch())
 {
 		?>
-		<article><p><?= $c['prenom'] ?></p> <p><?= $c['date_commentaire_fr'] ?></p> <p><?=$c['texte'] ?></p><p><?= $c['avis']?></p></article>
-	?>
+		<article class="commentaire"><p><?= $c['prenom'] ?></p> <p><?= $c['date_commentaire_fr'] ?></p> <p><?=$c['texte'] ?></p><p><?= $c['avis']?></p></article>
 	<?php
 ;}?>
-</div></body>
+</div></body> 
+	<?php include("header.php");
