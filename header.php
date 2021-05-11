@@ -14,12 +14,19 @@ session_start();
 		<title>GBAF: Groupement Banque-Assurance Français</title>
 	</head>
 	<header>
-		<a href=index.php><img class="logo"
+		<img class="logo"
 		src="logo.png"
 		alt="Logo GBAF"
-		 width="130" height="150"></a>
+		width="130" height="150">
 <?php
-	if(!isset($_SESSION['prenom']) AND !isset($_SESSION['nom']))
+	if(isset($_SESSION['prenom']) AND isset($_SESSION['nom']))
+	{
+	echo '<div class="bienvenue">';
+	echo '</br>Bienvenue, ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom'] . '</div>';
+	echo '<br><a href="deconnexion.php">     Se déconnecter</a>';
+	}
+
+	else
 	{
 	?>
 	<nav>
@@ -27,13 +34,6 @@ session_start();
 			</br>
 				<a href="connexion.php">     Se connecter</a>
 	<?php
-	}
-
-	else
-	{
-	echo '<div class="bienvenue">';
-	echo '</br>Bienvenue, ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom'];
-	echo '</div>';
 	}
 ?>
 </nav>
