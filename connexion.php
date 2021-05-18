@@ -6,6 +6,7 @@ session_start();
 	<head>
 		<!-- En tête -->
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css"/>
 		<link rel="stylesheet" href="connexion.css"/>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap');
@@ -26,8 +27,13 @@ if(!isset($_POST['pseudo']) AND !isset($_POST['mdp']))
 	<label for="mdp">Mot de passe </label>
 	<input type="password" name="mdp" id="mdp" />
 	<p><input type="submit" value="CONNEXION" /></p>
+	<a href="reset-mdp.php">Réinitialiser mon mot de passe</a>
 </fieldset>
-</form>';
+
+</form>
+
+'
+;
 }
 else
 {
@@ -49,6 +55,7 @@ $mdp=$_POST["mdp"];
 			{
 				$_SESSION['prenom'] = $prenom;
 				$_SESSION['nom'] = $nom;
+				$_SESSION['id'] = $uid;
 				$_SESSION['connected'] = true;
 				echo "L'identifiant est bon.<br> Connexion!";
 				header('Location: index.php');

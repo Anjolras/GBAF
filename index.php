@@ -10,10 +10,9 @@ if(isset($_SESSION['prenom']) AND isset($_SESSION['nom']))
 
 			<p><h1>Le Groupement Banque-Assurance Français est l'assocation d'entreprises parmis les plus puissantes de France! </h1>
 
-			<!-- Illustration pour le site
-			<img class="illustration"
-			src="illust.png"
-			alt="Illustration GBAF"> -->
+			<p><img class="illus"
+			src="images/gbaf-banniere.png"
+			alt="Illustration GBAF"></p>
 
 			<p><h2>Cette collaboration s'effectue entre six pilliers du monde des banques et des assurances qui ont fait leur preuve et qui décideront de l'avenir de ces mondes en France.</h2></p>
 
@@ -29,7 +28,7 @@ if(isset($_SESSION['prenom']) AND isset($_SESSION['nom']))
 			<h3><?php echo $i['resume'];?> </br></h3>
 			<a href=<?php echo $i['site'];?>>Site du groupe</a>
 
-			<a href=bnp.php><input class="INFO"
+			<a href=acteurs.php?id=<?php echo $i['id'];?>><input class="INFO"
 		       type="button"
 		       value="Lire la suite"></a></article>
 		       <?php
