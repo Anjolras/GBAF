@@ -1,13 +1,31 @@
 /* Colors : Détails/menu (rouge) =  rgb(255,0,0) | Texte (noir) = rgb(0,0,0) | 
 Background (vert-beige) = rgb(234, 244, 211) | background footer ? (gris argenté) = 
 rgb(105, 116, 124) | texte important ? (beige marrant) = rgb(253, 232, 196) */
+@font-face {
+ font-family: "Roboto Slab";
+ src: url("/polices/RobotoSlab-Regular.ttf") format("ttf"),
+ 		url("/polices/RobotoSlab-Regular.woff2") format("woff2"),
+        url("/polices/RobotoSlab-Regular.woff") format("woff");
+}
 h1
 {
 	border-bottom: 2px;
 	border-color: 1px;
 	border-bottom: solid red;
 }
-
+.illus
+{
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	float: center;
+	margin:auto;
+	padding:auto;
+}
+.longlogo
+{
+	justify-content: center;
+}
 h1, h2
 {
 	text-align: center;
@@ -22,7 +40,7 @@ h3
 }
 *
 {
-font-family: 'Roboto Slab', serif;
+font-family: 'Roboto Slab', 'Impact'
 }
 body
 {
@@ -167,22 +185,15 @@ color: rgb(253, 232, 196);
 border: solid rgb(105, 116, 124);
 border-width: 5px;
 border-spacing: 5px;
-vertical-align: middle;
-padding: 5px;
 }
 .commentaire
 {
 border: solid black;
-border-radius: 30px;
 border-width: 3px;
-border-spacing: 5px;
 margin-bottom: 2px;
-min-height: 150px;
-min-width: 250px;
-text-align: center;
-vertical-align: middle;
 }
-@media (max-width: 800px) 
+
+@media screen and (max-width: 800px) 
 {
   header img
    {

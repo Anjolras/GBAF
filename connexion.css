@@ -33,3 +33,7 @@ label:after
     padding-top: 5px; 
     border-bottom: 3px solid red;
 }
+fieldset a
+{
+  text-decoration: none;
+}

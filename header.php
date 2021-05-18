@@ -15,7 +15,7 @@ session_start();
 	</head>
 	<header>
 		<img class="logo"
-		src="logo.png"
+		src="/images/logo.png"
 		alt="Logo GBAF"
 		width="130" height="150">
 <?php
