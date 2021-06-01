@@ -1,0 +1,22 @@
+.commentaires {
+  border: solid black;
+  border-width: 2px;
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.commentaire {
+  margin: 15px;
+  padding: 30px;
+  width:90%;
+  height:30px;
+  border: 5px rgb(105, 116, 124);
+  box-shadow: 0 0 0 2.5px rgb(105, 116, 124), inset 0 0 0 2.5px rgb(105, 116, 124), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 6px #fff;
+  color: black;
+  font-family: Marcellus, serif;
+  font-size: 1em;
+  text-shadow: 0 2px #fff;
+  text-align: left;
+  display: flex;
+}

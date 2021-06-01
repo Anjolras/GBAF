@@ -1,0 +1,42 @@
+*
+{
+font-family: 'Roboto Slab', serif;
+font-weight: bold;
+}
+legend
+{
+	font-family: Raleway, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold
+}
+fieldset{
+  border: 5px solid red;
+  width: 400px;
+  text-align:center;
+  box-shadow: 2px solid black;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+label {
+	text-align: center;
+  padding-right:15px;
+  padding-bottom: 10px;
+  display:inline-block;
+  max-width:100px;
+}
+label:after
+{
+	content: ""; 
+  display: block; 
+  width: 75%;
+  padding-top: 5px; 
+  border-bottom: 3px solid red;
+}
+fieldset a
+{
+  text-decoration: none;
+}
