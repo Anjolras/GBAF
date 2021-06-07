@@ -130,13 +130,6 @@ border-width: 5px;
 border-spacing: 5px;
 font-weight: normal;
 }
-.acteurs img
-{
-	display:flex;
-	left : 1px;
-	position: relative;
-	float: left;
-}
 .module
 {
 border: solid black;
@@ -240,14 +233,23 @@ h1
 	margin: 8px;
 	text-align: center;
 	font-weight: normal;
-	width: 95%;
-	min-height: 500px;
-	display: inline-flex;
-	font-size: 300%;
+	width: 92%;
+	min-height: 200px;
+	display: inline-block;
+	font-size: auto;
+	}
+	.logo
+	{
+		display: none;
+	}
+	.biglogo
+	{
+		justify-content: top-center;
+		vertical-align: top;
 	}
 .module h2
 {
-	font-size: 300%;
+	font-size: auto;
 }
 
 	.acteurs
@@ -278,5 +280,19 @@ h1
 		margin: 30px;
 		float: right;
 		position: relative;
+	}
+}
+@media (min-width: 800px)
+{
+	.biglogo
+	{
+		display: none;
+	}
+	.logo
+	{
+	display:flex;
+	left : 1px;
+	position: relative;
+	float: left;
 	}
 }
