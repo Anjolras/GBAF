@@ -6,7 +6,7 @@
 <body>
 <h1>Paramètres de compte</h1>
 
-<form id="namechange" action="change-name.php" method="POST">
+<form id="namechange" action="actions/change-name.php" method="POST">
 <fieldset>
 	<legend><b>Changement de nom</b></legend>
 
@@ -18,7 +18,7 @@
 </fieldset>
 </form>
 
-<form id="mdpchange" action="change-pass.php" method="POST">
+<form id="mdpchange" action="actions/change-pass.php" method="POST">
 	<fieldset>
 
 	<legend><b>Changement de mot de passe</b></legend>
@@ -34,7 +34,7 @@
 </form>
 
 
-<form id="mailchange" action="change-mail.php" method="POST">
+<form id="mailchange" action="actions/change-mail.php" method="POST">
 <fieldset>
 	<legend><b>Changement d'adresse mail</b></legend>
 

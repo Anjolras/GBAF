@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 <?php include("bdd.php"); 
-$infos=$bdd->query('SELECT id, nom, short, image, resume, site FROM acteurs');
+$infos=$bdd->query('SELECT id, nom, short, image, longimage, resume, site FROM acteurs');
 ?>
 	<body>
  <?php
@@ -21,10 +21,14 @@ if(isset($_SESSION['prenom']) AND isset($_SESSION['nom'])) /*Vérification de se
 	while($i = $infos->fetch()) 
 	{
 		?>
-		<article class="module"><img class="logo-<?php echo $i['nom'];?>"
+		<article class="module"><img class="logo"
 		src="<?php echo $i['image'];?>"
 		lt="Logo de <?php echo $i['nom'];?>"
 		width="75" height="75">
+		<img class="biglogo"
+		src="<?php echo $i['longimage'];?>"
+		lt="Logo de <?php echo $i['nom'];?>"
+		width="160" height="50">
 		<h3><?php echo $i['resume'];?> </br></h3>
 		<a href=<?php echo $i['site'];?>>Site du groupe</a>
 

@@ -16,7 +16,7 @@ session_start();
 		<title>GBAF: Groupement Banque-Assurance Français</title>
 	</head>
 	<header>
-		<img class="logo"
+		<img class="logogbaf"
 		src="/images/logo.png"
 		alt="Logo GBAF"
 		width="130" height="150">
