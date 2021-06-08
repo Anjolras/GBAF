@@ -14,7 +14,7 @@ if(isset($_SESSION['prenom']) AND isset($_SESSION['nom'])) /*Vérification de se
 			src="images/gbaf-banniere.png"
 			alt="Illustration GBAF"></p>
 
-			<p><h2>Cette collaboration s'effectue entre six pilliers du monde des banques et des assurances qui ont fait leur preuve et qui décideront de l'avenir de ces mondes en France.</h2></p>
+			<p><h2>Cette collaboration s'effectue entre différents acteurs. Cette page vise à faire connaitre nos partenaires et recueillir les avis sur ceux-ci.</h2></p>
 
 	<section class="acteurs">
 	<?php /*Récupération des données pour chaque acteur*/
@@ -24,11 +24,11 @@ if(isset($_SESSION['prenom']) AND isset($_SESSION['nom'])) /*Vérification de se
 		<article class="module"><img class="logo"
 		src="<?php echo $i['image'];?>"
 		lt="Logo de <?php echo $i['nom'];?>"
-		width="75" height="75">
+		width="180" height="75">
 		<img class="biglogo"
-		src="<?php echo $i['longimage'];?>"
+		src="<?php echo $i['image'];?>"
 		lt="Logo de <?php echo $i['nom'];?>"
-		width="160" height="50">
+		width="200" height="75">
 		<h3><?php echo $i['resume'];?> </br></h3>
 		<a href=<?php echo $i['site'];?>>Site du groupe</a>
 

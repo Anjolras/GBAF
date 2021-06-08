@@ -13,7 +13,7 @@ while($i = $infos->fetch())
 	<body>
 	<h1><b><?php echo $i['nom']?></b></h1>
 	<div class="pres"> <!--Chercher les informations de chaque acteur-->
-	<p><img class="longlogo <?php echo $i['nom'];?>"
+	<p><img class="longlogo>"
 			src="<?php echo $i['longimage'];?>"
 			alt="Logo de <?php echo $i['nom'];?>"
 			width="800px" height="190px">
