@@ -3,7 +3,7 @@ $nom=$_POST['lastname'];
 $prenom=$_POST['firstname'];
 session_start();
 $id = $_SESSION["id"];
-include('bdd.php');
+include('../bdd.php');
 if(count($_POST)>0) 
 {
 $result = $bdd->query("SELECT * from membres WHERE id='" . $id . "'");
@@ -15,7 +15,7 @@ while ($row = $result->fetch())
 		$del->execute(array());
 		$message = "L'adresse mail a bien été changée'";
 		echo $message;
-		header("Location:index.php");
+		header("Location:../index.php");
 	}
 }
 ?>

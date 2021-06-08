@@ -3,7 +3,7 @@ $pass=$_POST["pass"];
 $newpass=$_POST["newPass"];
 session_start();
 $id = $_SESSION["id"];
-include('bdd.php');
+include('../bdd.php');
 if(count($_POST)>0) 
 {
 	$result = $bdd->query("SELECT * from membres WHERE id='" . $id . "'");
@@ -22,7 +22,7 @@ session_commit();
 setcookie(session_name(),'',0,'/');
 session_regenerate_id(true);
 
-header('location: connexion.php');
+header('location: ../connexion.php');
 		}
 	}
 } 
