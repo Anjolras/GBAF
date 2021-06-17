@@ -1,7 +1,7 @@
 *
 {
-font-family: 'Roboto Slab', serif;
-font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 legend
 {
@@ -9,19 +9,19 @@ legend
 	font-size: 1.5em;
 	font-weight: bold
 }
-fieldset{
+fieldset
+{
   border: 5px solid red;
   width: 400px;
   text-align:center;
-  box-shadow: 2px solid black;
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -ms-transform: translateY(-50%);
+  left: 45%;
   transform: translateY(-50%);
 }
-label {
+label 
+{
 	text-align: center;
   padding-right:15px;
   padding-bottom: 10px;

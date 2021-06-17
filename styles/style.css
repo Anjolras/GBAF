@@ -1,17 +1,17 @@
 /* Colors : Détails/menu (rouge) =  rgb(255,0,0) | Texte (noir) = rgb(0,0,0) | 
 Background (vert-beige) = rgb(234, 244, 211) | background footer ? (gris argenté) = 
 rgb(105, 116, 124) | texte important ? (beige marrant) = rgb(253, 232, 196) */
-@font-face {
- font-family: "Roboto Slab";
- src: url("/polices/RobotoSlab-Regular.ttf") format("ttf"),
- 		url("/polices/RobotoSlab-Regular.woff2") format("woff2"),
-        url("/polices/RobotoSlab-Regular.woff") format("woff");
+@font-face 
+{
+	font-family: "Roboto Slab";
+	src: url("/polices/RobotoSlab-Regular.ttf") format("ttf"),
+	url("/polices/RobotoSlab-Regular.woff2") format("woff2"),
+	url("/polices/RobotoSlab-Regular.woff") format("woff");
 }
 
 nav ul
 {
 	list-style-type: none;
-	display: center;
 }
 nav li
 {
@@ -33,15 +33,13 @@ nav a:hover
 h1
 {
 	border-bottom: 2px;
-	border-color: 1px;
 	border-bottom: solid red;
 }
 .illus
 {
-   justify-content: center;
+    justify-content: center;
     margin: auto;
     text-align: center;
-    float: center;
     display: flex;
 }
 .longlogo
@@ -49,7 +47,6 @@ h1
     justify-content: center;
     margin: auto;
     text-align: center;
-    float: center;
     display: flex;
 }
 h1, h2
@@ -58,7 +55,7 @@ h1, h2
 	justify-content: center;
 	width: 900px;
 	margin: auto;
-font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 h3
 {
@@ -66,7 +63,7 @@ h3
 }
 *
 {
-font-family: 'Roboto Slab', 'Impact'
+	font-family: 'Roboto Slab', 'Impact'
 }
 body
 {
@@ -80,13 +77,13 @@ ul, li
 }
 footer
 {
-		text-align: center;
-		border-top: solid 3px;
-		border-color: red;
-		align-content: center;
-		justify-content: center;
-		padding: 5px;
-		margin: 10px;
+	text-align: center;
+	border-top: solid 3px;
+	border-color: red;
+	align-content: center;
+	justify-content: center;
+	padding: 5px;
+	margin: 10px;
 }
 footer a
 {
@@ -118,7 +115,6 @@ nav a
 	position:relative;
 	float: right;
 	margin: auto;
-	padding: auto;
 	vertical-align: center;
 }
 nav a:hover, .bienvenue:hover
@@ -128,22 +124,22 @@ nav a:hover, .bienvenue:hover
 }
 .acteurs
 {
-border: solid rgb(105, 116, 124);
-border-width: 5px;
-border-spacing: 5px;
-font-weight: normal;
+	border: solid rgb(105, 116, 124);
+	border-width: 5px;
+	border-spacing: 5px;
+	font-weight: normal;
 }
 .module
 {
-border: solid black;
-border-width: 3px;
-border-spacing: 5px;
-padding: 10px;
-margin: 8px;
-max-height: 100px;
-min-width: 250px;
-text-align: center;
-font-weight: normal;
+	border: solid black;
+	border-width: 3px;
+	border-spacing: 5px;
+	padding: 10px;
+	margin: 8px;
+	max-height: 100px;
+	min-width: 250px;
+	text-align: center;
+	font-weight: normal;
 }
 .module h3
 {
@@ -155,29 +151,29 @@ font-weight: normal;
 	text-align: center;
 	color:black;
 	border: 0px solid red;
-	border-radius: 25px;
-	background-color: rgb(253, 232, 196);
+	border-radius: 50px;
+	background-color: rgb(0, 0, 0, 0.5);
 	display: flex;
 	right: 15px;
 	position: relative;
 	float: right;
 	margin: auto;
-	padding: auto;
 	vertical-align: center;
+	padding: 2px;
 }
 .module a
 {
-text-decoration: none;
-color: rgb(253, 232, 196);
+	text-decoration: none;
+	color: orange;
 }
 .module:nth-child(1)
 {
-	background: #00805280;
+	background: #ff7f0080;
 
 }
 .module:nth-child(2)
 {
-	background: #7B558A80;
+	background: #03224c80;
 }
 .module:nth-child(3)
 {
@@ -185,7 +181,7 @@ color: rgb(253, 232, 196);
 }
 .module:nth-child(4)
 {
-	background: #ED1C2480;
+	background: #006580;
 }
 .module:nth-child(5)
 {
@@ -201,7 +197,6 @@ color: rgb(253, 232, 196);
 }
 .image_middle
 {
-	float:center;
 	align-content: center;
 	justify-content: center;
 }
@@ -209,37 +204,35 @@ color: rgb(253, 232, 196);
 
 @media (max-width: 800px) 
 {
-h1
-{
-	padding: auto;
-	float: center;
-}
-  header img
-   {
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    float: center;
-    display: flex;
-  }
-    .bienvenue
-   {
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    float: center;
-    display: flex;
-  }
-  .module
+	body
 	{
-	padding: 10px;
-	margin: 8px;
-	text-align: center;
-	font-weight: normal;
-	width: 92%;
-	min-height: 200px;
-	display: inline-block;
-	font-size: auto;
+	justify-content: center;
+	width: 600px;
+	margin: auto;
+	}
+	header img
+	{
+	    justify-content: center;
+	    margin: auto;
+	    text-align: center;
+	    display: flex;
+	}
+	.bienvenue
+	{
+	    justify-content: center;
+	    margin: auto;
+	    text-align: center;
+	    display: flex;
+	}
+	.module
+	{
+		padding: 10px;
+		margin: 8px;
+		text-align: center;
+		font-weight: normal;
+		width: 92%;
+		min-height: 200px;
+		display: inline-block;
 	}
 	.logo
 	{
@@ -247,14 +240,19 @@ h1
 	}
 	.biglogo
 	{
-		justify-content: top-center;
 		vertical-align: top;
 	}
-.module h2
-{
-	font-size: auto;
-}
-
+	.illus
+	{
+		display: none;
+	}
+	.illus-mobile
+	{
+	justify-content: center;
+    margin: auto;
+    text-align: center;
+    display: flex;
+	}
 	.acteurs
 	{
 		width: 95%;
@@ -265,17 +263,16 @@ h1
 	}
 	body
 	{
-	justify-content: center;
-	width: 100%;
-	margin: auto;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
 	}
 	h1, h2, .pres
 	{
-	width: 100%;
-	justify-content: center;
-    margin: auto;
-    text-align: center;
-    float: center;
+		width: 100%;
+		justify-content: center;
+	    margin: auto;
+	    text-align: center;
 	}
 	.INFO
 	{
@@ -293,9 +290,22 @@ h1
 	}
 	.logo
 	{
-	display:flex;
-	left : 1px;
-	position: relative;
-	float: left;
+		display:flex;
+		left : 1px;
+		position: relative;
+		float: left;
+	}
+	.illus-mobile
+	{
+		display: none;
+	}
+}
+@media (max-width: 500px) 
+{
+	body
+	{
+	justify-content: center;
+	width: 400px;
+	margin: auto;
 	}
 }
