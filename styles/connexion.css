@@ -1,4 +1,4 @@
-*
+  *
 {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -8,17 +8,6 @@ legend
 	font-family: Raleway, sans-serif;
 	font-size: 1.5em;
 	font-weight: bold
-}
-fieldset
-{
-  border: 5px solid red;
-  width: 400px;
-  text-align:center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: translateY(-50%);
 }
 label 
 {
@@ -39,4 +28,32 @@ label:after
 fieldset a
 {
   text-decoration: none;
+}
+fieldset
+{
+  border: 5px solid red;
+}
+@media (max-width: 800px)
+{
+  *
+  {
+  text-align: center;
+  }
+  fieldset
+  {
+    transform: translateY(50%);
+  }
+}
+@media (min-width: 800px) 
+{
+  fieldset
+{
+  width: 400px;
+  text-align:center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+}
 }
