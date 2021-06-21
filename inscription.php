@@ -45,7 +45,6 @@ if(!isset($_POST['pseudo']) AND !isset($_POST['mdp']))
 	</p>
 	<p>
 	<label for="question">Question secrète</label>
-	<input id="question">
 	<select name="question" id="question-select">
 
 	    <option value="Votre meilleur ami d'enfance">Votre meilleur ami d'enfance</option>
